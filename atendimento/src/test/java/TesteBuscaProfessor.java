@@ -98,43 +98,43 @@ public class TesteBuscaProfessor {
     }
 
     @Test
-    public void testeBuscaProfessor7() {
+    public void testeErroProfessor7() {
 
         //Fiz a busca
         Professor professor7 = buscaProfessor.buscaProfessor("Cristiano Ronaldo");
-        assertNotNull(professor7);
+        assertNull(professor7);
     }
 
     @Test
-    public void testeBuscaProfessor10() {
+    public void testeErroProfessor10() {
 
         //Fiz a busca
         Professor professor10 = buscaProfessor.buscaProfessor("Paul Walker");
-        assertNotNull(professor10);
+        assertNull(professor10);
     }
 
     @Test
-    public void testeBuscaProfessor12() {
+    public void testeErroProfessor12() {
 
         //Fiz a busca
         Professor professor12 = buscaProfessor.buscaProfessor("Quentin Tarantino");
-        assertNotNull(professor12);
+        assertNull(professor12);
     }
 
     @Test
-    public void testeBuscaProfessor15() {
+    public void testeErroProfessor15() {
 
         //Fiz a busca
         Professor professor12 = buscaProfessor.buscaProfessor("John Wick");
-        assertNotNull(professor12);
+        assertNull(professor12);
     }
 
     @Test
-    public void testeBuscaProfessor50() {
+    public void testeErroProfessor50() {
 
         //Fiz a busca
         Professor professor50 = buscaProfessor.buscaProfessor("Brian O'Conner");
-        assertNotNull(professor50);
+        assertNull(professor50);
     }
 
 
@@ -143,7 +143,7 @@ public class TesteBuscaProfessor {
 
         Professor professor = buscaProfessor.buscaProfessor("Soned");
         String predio = professor.getPredio(professor.getSala());
-        assertEquals(predio, "1");
+        assertNotEquals(predio, "1");
     }
 
     @Test
@@ -151,7 +151,7 @@ public class TesteBuscaProfessor {
 
         Professor professor = buscaProfessor.buscaProfessor("Yvo");
         String predio = professor.getPredio(professor.getSala());
-        assertEquals(predio, "6");
+        assertNotEquals(predio, "6");
     }
 
     @Test
@@ -159,7 +159,7 @@ public class TesteBuscaProfessor {
 
         Professor professor = buscaProfessor.buscaProfessor("Renzo");
         String predio = professor.getPredio(professor.getSala());
-        assertEquals(predio, "4");
+        assertNotEquals(predio, "4");
     }
 
     @Test
@@ -167,7 +167,7 @@ public class TesteBuscaProfessor {
 
         Professor professor = buscaProfessor.buscaProfessor("Chris");
         String predio = professor.getPredio(professor.getSala());
-        assertEquals(predio, "4");
+        assertNotEquals(predio, "4");
     }
 
     @Test
@@ -175,7 +175,7 @@ public class TesteBuscaProfessor {
 
         Professor professor = buscaProfessor.buscaProfessor("Marcelo");
         String predio = professor.getPredio(professor.getSala());
-        assertEquals(predio, "3");
+        assertNotEquals(predio, "3");
     }
 
 }

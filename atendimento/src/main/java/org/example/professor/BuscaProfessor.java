@@ -13,4 +13,5 @@ public class BuscaProfessor {
     public Professor buscaProfessor(String nomeProfessor) {
         return professorService.busca(nomeProfessor);
     }
+
 }
